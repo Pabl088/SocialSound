@@ -1,0 +1,78 @@
+{
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@emotion/react": "^11.10.4",
+        "@emotion/styled": "^11.10.4",
+        "@fortawesome/fontawesome-svg-core": "^6.2.0",
+        "@fortawesome/free-regular-svg-icons": "^6.2.0",
+        "@fortawesome/free-solid-svg-icons": "^6.2.0",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@mui/icons-material": "^5.10.3",
+        "@mui/material": "^5.10.5",
+        "@mui/styles": "^5.10.6",
+        "@reduxjs/toolkit": "^1.8.5",
+        "@stripe/react-stripe-js": "^1.10.0",
+        "@stripe/stripe-js": "^1.36.0",
+        "@testing-library/jest-dom": "^5.11.10",
+        "@testing-library/react": "^11.2.6",
+        "@testing-library/user-event": "^13.1.1",
+        "@videojs/themes": "^1.0.1",
+        "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
+        "axios": "^0.27.2",
+        "babel-plugin-macros": "^3.1.0",
+        "chart.js": "^3.9.1",
+        "dotenv": "^16.0.1",
+        "enzyme": "^3.11.0",
+        "firebase": "^9.10.0",
+        "firebase-admin": "^11.0.1",
+        "framer-motion": "^4.1.17",
+        "is-react": "^1.5.4",
+        "jol-player": "^3.5.0",
+        "luxon": "^3.0.4",
+        "react": "^17.0.2",
+        "react-chartjs-2": "^4.3.1",
+        "react-dom": "^17.0.2",
+        "react-h5-audio-player": "^3.8.6",
+        "react-material-ui-carousel": "^3.4.2",
+        "react-player": "^2.10.1",
+        "react-redux": "^7.2.3",
+        "react-router-dom": "^6.0.0",
+        "react-scripts": "4.0.3",
+        "react-search-autocomplete": "^7.2.2",
+        "react-share": "^4.4.0",
+        "redux": "^4.0.5",
+        "redux-mock-store": "^1.5.4",
+        "redux-thunk": "^2.3.0",
+        "stripe": "^10.11.0",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "video.js": "^7.20.3"
+    }
+}
