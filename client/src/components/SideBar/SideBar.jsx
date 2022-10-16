@@ -162,42 +162,42 @@ const SideBar = ({ userDB }) => {
   };
 
   return (
-        <div className={s.sidebar}>
-            <ul className={s.routescontainer}>
-                <img width='70px' alt='logo' src={logo} />
-                <div className={s.profileItem}>
-                <Link to={`/home/explore/${user.id}`}>
-                  <img className={s.profilePic} width='40px' alt='profile' src={userDB?.avatar}/>
-                </Link>
-                <FontAwesomeIcon
-                  onClick={handleOpenMenu}
-                  className={s.dotsMenu}
-                  icon={faEllipsis}
-                  />
-                <Menu
-                style={{margin: "125px 0 0 134px"}}
-                open={openMenu}
-                onClose={handleCloseMenu}
-                anchorOrigin={{
-                  horizontal: "left",
-                  vertical: "top",
-                }}
-              >
-                <MenuItem onClick={handleOpenSettings}>Edit profile</MenuItem>
-              </Menu>
-              <Modal
-                open={openSettings}
-                onClose={handleCloseSettings}
-                sx={{ backdropFilter: "blur(3px)" }}
-              >
-                <EditProfile
-                  close={handleCloseSettings}
-                  setOpenSettings={setOpenSettings}
-                />
-              </Modal>
-                </div>
-                <li className={s.routeItem}> <Link to='/home'>Home</Link> </li>
-                <li className={s.routeItem}> <Link to='/home/explore'>Explore</Link> </li>
+    <div className={s.sidebar}>
+      <ul className={s.routescontainer}>
+        <img width='70px' alt='logo' src={logo} />
+        <div className={s.profileItem}>
+          <Link to={`/home/explore/${user.id}`}>
+            <img className={s.profilePic} width='40px' alt='profile' src={userDB?.avatar} />
+          </Link>
+          <FontAwesomeIcon
+            onClick={handleOpenMenu}
+            className={s.dotsMenu}
+            icon={faEllipsis}
+          />
+          <Menu
+            style={{ margin: "125px 0 0 134px" }}
+            open={openMenu}
+            onClose={handleCloseMenu}
+            anchorOrigin={{
+              horizontal: "left",
+              vertical: "top",
+            }}
+          >
+            <MenuItem onClick={handleOpenSettings}>Edit profile</MenuItem>
+          </Menu>
+          <Modal
+            open={openSettings}
+            onClose={handleCloseSettings}
+            sx={{ backdropFilter: "blur(3px)" }}
+          >
+            <EditProfile
+              close={handleCloseSettings}
+              setOpenSettings={setOpenSettings}
+            />
+          </Modal>
+        </div>
+        <li className={s.routeItem}> <Link to='/home'>Home</Link> </li>
+        <li className={s.routeItem}> <Link to='/home/explore'>Explore</Link> </li>
 
         <li className={s.routeItem}><Link to='/messages'>Messages</Link></li>
 
@@ -346,7 +346,7 @@ const SideBar = ({ userDB }) => {
         </Dialog>
       }
     </div>
-  )
-}
+  );
+};
 
-export default SideBar
+export default SideBar;

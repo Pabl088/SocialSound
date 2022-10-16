@@ -5,7 +5,7 @@ const { PRICES_ID } = process.env
 
 
 const payment = async (req, res) => {
-  const { userId } = req.body;
+  //const { userId } = req.body;
 
   const session = await stripe.checkout.sessions.create({
     // payment_method_types: ["card"],
@@ -26,7 +26,7 @@ const payment = async (req, res) => {
     // ],
 
     mode: "subscription",
-    line_items: [{price: PRICES_ID, quantity: 1}],
+    line_items: [{ price: PRICES_ID, quantity: 1 }],
 
     success_url: 'https://www.socialsound.art/home/success',
     cancel_url: 'https://www.socialsound.art/home'

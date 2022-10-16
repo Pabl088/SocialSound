@@ -6,14 +6,14 @@ const PayButton = () => {
 
   const handleCheckout = () => {
     let premium = localStorage.getItem("premium");
-    if(premium) localStorage.removeItem("premium");
+    if (premium) localStorage.removeItem("premium");
     localStorage.setItem("premium", true)
     axios
       .post("/create-checkout-session", {
-       description:'',
-       amount: 1000,
-       quantity: 'month',
-       
+        description: '',
+        amount: 1000,
+        quantity: 'month',
+
       })
       .then((response) => {
         if (response.data.url) {
